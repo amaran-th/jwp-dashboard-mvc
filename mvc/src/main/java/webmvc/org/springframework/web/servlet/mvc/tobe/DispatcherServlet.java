@@ -19,7 +19,9 @@ public class DispatcherServlet extends HttpServlet {
     private HandlerMappings handlerMappings;
     private HandlerAdapters handlerAdapters;
 
-    public DispatcherServlet() {
+    public DispatcherServlet(final HandlerMappings handlerMappings, final HandlerAdapters handlerAdapters) {
+        this.handlerMappings = handlerMappings;
+        this.handlerAdapters = handlerAdapters;
     }
 
     @Override
